@@ -1,0 +1,35 @@
+/* Start About Page */
+
+/* Start Modify To Container */
+
+.banner_area {
+    .banner-content {
+        min-height: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            margin-bottom: 0;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        ul {
+            display: flex;
+            li {
+                margin-right: 10px;
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+
+/* End Modify To Container */
+
+
+/* End About Page */

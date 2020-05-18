@@ -1,0 +1,66 @@
+/* Start Banner Area */
+
+.banner_area {
+    background-image: linear-gradient(100deg, rgb(77, 171, 255) 0%, rgb(98, 221, 255) 100%);
+    color: #FFF;
+    font-family: $rob;
+    @media #{$maxSmall} {
+        padding: $sPadding 0 $mainPadding;
+    }
+    .banner-content-section {
+        align-self: center;
+        .banner-content {
+            h1 {
+                font: {
+                    size: 48px;
+                    weight: bold;
+                    family: $heeb;
+                }
+                margin-top: 0;
+                margin-bottom: 20px;
+                @media #{$maxSmall} {
+                    font-size: 28px;
+                    br{content:' ';}
+                    br:after{content:' ';}
+                }
+            }
+            p {
+                font-size: 14px;
+                letter-spacing: 0.7px;
+                margin-bottom: 35px;
+            }
+            .btn-banner {
+                a {
+                    text-decoration: none;
+                    @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+                }
+                .l-btn {
+                    margin-right: 10px;
+                    &:hover {
+                        background-color: #FFF;
+                        color: $textColor !important;
+                    }
+                }
+                .r-btn {
+                    background-color: #FFF;
+                    color: $textColor !important;
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        color: #FFF !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .img-banner-section {
+        .img-banner {
+            img {
+                width: 100%;
+                padding: 230px 0;
+            }
+        }
+    }
+}
+
+/* End Banner Area */

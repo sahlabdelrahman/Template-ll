@@ -1,0 +1,77 @@
+/* Start Footer */
+
+footer {
+    padding: $mainPadding 0;
+    background-color: $secondBackground;
+    @media #{$maxSmall} {
+        padding: $sPadding 0;
+
+    }
+    h4 {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+    p {
+        color: $pColor;
+        font-size: 14px;
+        
+    }
+    .about {
+        
+        p {
+            margin-bottom: 30px;
+            span {
+                color: $mainColor;
+            }
+        }
+    }
+
+    .newsletter {
+        form {
+            input[type="email"] {
+                display: inline-block;
+                width: 80%;
+                color: #CCC !important;
+                font-size: 14px;
+                border: none;
+                border-radius: 0;
+            }
+            button {
+                width: 42px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                margin-top: -4px;
+                margin-left: -5px;
+                background-color: $mainColor;
+                color: #FFF;
+                outline: none !important;
+                border-radius: 0;
+                box-shadow: none !important;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .follow {
+        ul {
+            display: flex;
+            li {
+                
+                margin-right: 17px;
+                
+                a {
+                    color: #CCC;
+                    font-size: 14px;
+                    @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Footer */

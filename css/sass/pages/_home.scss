@@ -1,0 +1,436 @@
+/* Start Home Page */
+
+/* Start Work Area */
+
+.work-area {
+    padding: $mainPadding 0;
+    
+    @media #{$maxMobile} {
+        padding: $sPadding 0;
+
+    }
+    .content-work {
+        .row {
+            .work-box {
+                i {
+                    
+                    width: 80px;
+                    height: 80px;
+                    color: $textColor;
+                    background-color: #f9f9ff;
+                    line-height: 80px;
+                    font-size: 30px;
+                    border: 1px solid #eee;
+                    border-radius: 5px;
+                    margin-bottom: 30px;
+                    @include prefixer(transition, all 0.3s ease-in-out, webkit moz o)
+                    
+                }
+                h4 {
+                    color: $textColor;
+                    font-weight: 700;
+                    @include prefixer(transition, all 0.15s ease-in-out, webkit moz o);
+                    @media #{$maxMobile} {
+                        font-size: 20px;
+                
+                    }
+                }
+                P {
+                    max-width: 310px;
+                    margin: auto;
+                    color: $pColor;
+                    font-size: 14px;
+                    line-height: 24px;
+                    @media #{$maxSmall} {
+                        margin-bottom: 50px;
+                
+                    }
+                }
+                &:hover {
+                    i {
+                        color: #FFF;
+                        background-image: linear-gradient(100deg, rgb(77, 171, 255) 0%, rgb(98, 221, 255) 100%);
+                        @include prefixer(box-shadow, 0px 10px 30px 0px rgba(0, 0, 0, 0.1), webkit moz o)
+                    }
+
+                    h4 {
+                        color: #3bacf0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* End Work Area */
+
+/* Start Tabs Area */
+
+.tabs-area {
+    background-color: $mainBackground;
+    padding: $mainPadding 0;
+    @media #{$maxMobile} {
+        padding: $sPadding 0;
+
+    }
+    nav {
+
+        div {
+            @media #{$maxMobile} {
+                margin-bottom: 15px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        .nav-item {
+            background-color: #FFF;
+            color: $textColor;
+            line-height: 45px;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        .nav-item:first-of-type {
+            margin-left: 0;
+        }
+        .nav-item:last-of-type {
+            margin-right: 0;
+        }
+        .active {
+            background-image: linear-gradient(100deg, rgb(77, 171, 255) 0%, rgb(98, 221, 255) 100%);
+            @include prefixer(box-shadow, 0px 10px 30px 0px rgba(0, 0, 0, 0.1), webkit moz o);
+            color: #FFF;
+        }
+    }
+
+    .tab-content {
+        margin-top: 30px;
+        .left-tab {
+            vertical-align: middle;
+            align-self: center;
+
+            h3 {
+                color: $textColor;
+                line-height: 45px;
+                font-weight: bold;
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+            h6 {
+                color: $textColor;
+                font-weight: bold;
+            }
+            p {
+                color: $pColor;
+                font-size: 14px;
+            }
+            .btn-tab {
+                font-size: 14px;
+                margin-top: 35px;
+                @media #{$maxSmall} {
+                    margin-top: 60px;
+                    margin-bottom: 60px;
+                }
+                a {
+                    padding: 17px 30px;
+                    color: #FFF;
+                    background-image: linear-gradient(to right, #4dabff 0%, #62ddff 48%, #4dabff 100%);
+                    background-size: 200% auto;
+                    border: none;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    @include prefixer(transition, all 0.5s linear, webkit moz o);
+                    &:hover {
+                        background-position: right center;
+                    }
+                }
+            }
+        }
+        .right-tab {
+            .img-tab {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* End Tabs Area */
+
+/* Start Screen Area */
+
+.screen-area {
+    padding: $mainPadding 0;
+    @media #{$maxMobile} {
+        padding: $sPadding 0;
+        img {
+            width: 100%;
+        }
+
+    }
+}
+
+/* End Screen Area */
+
+/* Start Made Life Area */
+
+.made-life {
+    background-color: $mainBackground;
+    padding: $mainPadding 0;
+    @media #{$maxMobile} {
+        padding: $sPadding 0;
+
+    }
+    .info-container {
+        vertical-align: middle;
+        align-self: center;
+
+        h3 {
+            color: $textColor;
+            line-height: 45px;
+            font-weight: bold;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h6 {
+            color: $textColor;
+            font-weight: bold;
+        }
+        p {
+            color: $pColor;
+            font-size: 14px;
+        }
+        .btn-made {
+            font-size: 14px;
+            margin-top: 35px;
+            @media #{$maxSmall} {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+            a {
+                padding: 17px 30px;
+                color: #FFF;
+                background-image: linear-gradient(to right, #4dabff 0%, #62ddff 48%, #4dabff 100%);
+                background-size: 200% auto;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                @include prefixer(transition, all 0.5s linear, webkit moz o);
+                &:hover {
+                    background-position: right center;
+                }
+            }
+        }
+    }
+    .img-container {
+        .img-made {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+/* End Made Life Area */
+
+/* Start Price Area */
+
+.price-area {
+    padding: $mainPadding 0;
+    @media #{$maxMobile} {
+        padding: $sPadding 0;
+
+    }
+    .price-content {
+        .price-item {
+            border: 1px solid #eee;
+            border-radius: 5px;
+            @media #{$maxSmall} {
+                width: 80%;
+                margin: auto;
+                margin-bottom: 35px;
+            }
+            .price-head {
+                padding: 35px 0;
+                background-color: $mainBackground;
+                border-bottom: 1px solid #eeeeee;
+                @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+                h4 {
+                    margin-bottom: 0;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $textColor;
+                    @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+                }
+            }
+
+            .price-body {
+                padding: 30px 0;
+                color: $pColor;
+                ul {
+                    line-height: 2.5;
+                }
+            }
+
+            .price-footer {
+                padding: 40px 0;
+                background-color: $mainBackground;
+                border-radius: 5px;
+                width: 80%;
+                margin: auto;
+                margin-bottom: 40px;
+                @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+                h3 {
+                    
+                    font-size: 72px;
+                    font-weight: 700;
+                    color: $textColor;
+                    @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+                    
+                    .currency {
+                        display: inline-block;
+                        vertical-align: top;
+                        font-size: 24px;
+                        padding-top: 14px;
+                    }
+                    .period {
+                        display: inline-block;
+                        font-size: 14px;
+                        font-family: $rob;
+                        color: $pColor;
+                        @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+                    }
+                }
+                a {
+                    width: 160px;
+                    border-radius: 7px;
+                    display: inline-block;
+                    background-image: linear-gradient(100deg, rgb(77, 171, 255) 0%, rgb(98, 221, 255) 100%);
+                    color: #FFF;
+                    text-decoration: none;
+                    @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+                }
+            }
+            &:hover {
+                .price-head {
+                    background-image: linear-gradient(100deg, rgb(77, 171, 255) 0%, rgb(98, 221, 255) 100%);
+                    h4 {
+                        color: #FFF;
+                    }
+                }
+
+                .price-footer {
+                    background-image: linear-gradient(100deg, rgb(77, 171, 255) 0%, rgb(98, 221, 255) 100%);
+                    h3 {
+                        color: #FFF;
+                        .period {
+                            color: #FFF;
+                        }
+                    }
+                    a {
+                        background: #FFF;
+                        color: $textColor !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Price Area */
+
+/* Start Testimonials Area */
+
+.testimonials-area {
+    padding: $mainPadding 0;
+    @media #{$maxMobile} {
+        padding: $sPadding 0;
+
+    }
+    background-color: $mainBackground;
+    .owl-carousel {
+        .item {
+            padding: 40px;
+            background-color: #FFF;
+            border-radius: 10px;
+            .media {
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border: 1px solid #f3eeee;
+                    border-radius: 50%;
+                }
+                .media-body {
+                    margin-left: 25px;
+                    p {
+                        font-size: 14px;
+                        color: $pColor;
+                        margin-bottom: 20px;
+                    }
+                    h4 {
+                        font-weight: 700;
+                        color: $textColor;
+                        font-size: 20px;
+                        @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+                    }
+                    .rating {
+                        i {
+                            color: #ffc000;
+                        }
+                    }
+                }
+                &:hover {
+                    h4 {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Start Impress Area */
+
+.impress-area {
+    padding: $mainPadding 0;
+    @media #{$maxMobile} {
+        padding: $sPadding 0;
+
+    }
+    background-color: $mainColor;
+    .main-title {
+        margin-bottom: 0;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 35px;
+        }
+        a {
+            width: auto;
+            background-color: #FFF;
+            color: $textColor !important;
+            text-decoration: none;
+            font-weight: 700;
+            @include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: #FFF !important;
+            }
+        }
+    }
+}
+
+/* End Impress Area */
+
+/* End Home Page */

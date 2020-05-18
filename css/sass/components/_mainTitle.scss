@@ -1,0 +1,20 @@
+.main-title {
+    margin-bottom: 60px;
+    h2 {
+        color: $textColor;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        @media #{$maxMobile} {
+            font-size: 25px;
+        }
+    }
+    p {
+        color: $pColor;
+        font-size: 14px;
+        margin: auto;
+        max-width: 570px;
+        line-height: 24px;
+    }
+}

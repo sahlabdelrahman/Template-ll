@@ -1,0 +1,30 @@
+// Screens
+
+$maxMobile: "(max-width: 767px)";
+$minSmall: "(min-width: 768px)";
+$maxSmall: "(max-width: 991px)";
+$minMedium: "(min-width: 992px)";
+$maxMedium: "(max-width: 1199px)";
+$minLarge: "(min-width: 1200px)";
+
+
+// fonts variables
+$rob: 'Roboto', sans-serif;
+$heeb: 'Heebo', sans-serif;
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+// colors variables
+$mainColor: #3bacf0;
+$textColor: #222;
+$pColor: #777;
+
+// background
+$mainBackground: #EDF6FF;
+$secondBackground: #000410;
+
+// padding
+
+$mainPadding: 120px;
+$sPadding: 60px;
