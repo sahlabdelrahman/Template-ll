@@ -695,26 +695,26 @@ p, a {
 /* End Home Page */
 /* Start About Page */
 /* Start Modify To Container */
-.banner_area .banner-content {
+.banner_area .banner-cont {
   min-height: 430px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.banner_area .banner-content h2 {
+.banner_area .banner-cont h2 {
   margin-bottom: 0;
   font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.banner_area .banner-content ul {
+.banner_area .banner-cont ul {
   display: flex;
 }
-.banner_area .banner-content ul li {
+.banner_area .banner-cont ul li {
   margin-right: 10px;
 }
-.banner_area .banner-content ul li a {
+.banner_area .banner-cont ul li a {
   font-size: 14px;
   text-decoration: none;
   color: #FFF;
